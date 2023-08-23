@@ -32,7 +32,7 @@ function displayTodayData(data)
     todayMonth.innerHTML = todayDate.toLocaleDateString("en-US",{month:"long"})
     todayLocation.innerHTML = data.location.name
     todayTemp.innerHTML = data.current.temp_c
-    todayConditionImg.setAttribute("src",getWeatherData.data.current.condition.icon)
+    todayConditionImg.setAttribute("src",data.current.condition.icon)
     todayConditionText.innerHTML = data.current.condition.text
     humidity.innerHTML = data.current.humidity+"%"
     wind.innerHTML = data.current.wind_kph+"km/h"
@@ -41,13 +41,13 @@ function displayTodayData(data)
 
 function displayNextData(data)
 {
-    let forecastData = data.forecast.forecastday
+    let forecastData =data.forecast.forecastday
     for(let i = 0 ; i < 2 ; i++)
     {
         let nextDate = new Date(forecastData[i+1].date)
         nextDay[i].innerHTML = nextDate.toLocaleDateString("en-US",{weekday:"long"})
-        nextMaxTemp[i].innerHTML = forecastData[i+1].day.maxtemp_c
-        nextMinTemp[i].innerHTML = forecastData[i+1].day.mintemp_c
+        nextMaxTemp[i].innerHTML =forecastData[i+1].day.maxtemp_c
+        nextMinTemp[i].innerHTML =forecastData[i+1].day.mintemp_c
         nextConditionImg[i].setAttribute("src",forecastData[i+1].day.condition.icon)
         nextConditionText[i].innerHTML = forecastData[i+1].day.condition.text
     }
