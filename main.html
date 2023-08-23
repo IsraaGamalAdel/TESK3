@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body >
+    <div class="site-header">
+            <nav class="navbar ">
+                <div class="container">
+                    <a class="branding" href="/">
+                        <img src="./images/logo2x.png" alt="" class="logo" width="64" height="38">
+                        <div class="logo-type">
+                            <h1 class="site-title">Weather</h1>
+                            <small class="site-description">tagline goes here</small>
+                        </div>
+                    </a>
+                    <div class="main-navigation  ">
+						<button type="button" class="menu-toggle">
+                            <i class="fa fa-bars"></i>
+                        </button>
+						<ul class="menu d-flex justify-content-end p-5 list-unstyled ">
+							<li class="menu-item "><a href="index.html">Home</a></li>
+							<li class="menu-item "><a href="#">News</a></li>
+							<li class="menu-item "><a href="#">Live cameras</a></li>
+							<li class="menu-item "><a href="#">Photos</a></li>
+							<li class="menu-item  current-menu-item px-3 "><a href="main.html">Contact</a></li>
+						</ul> 
+					</div>
+                </div>
+            </nav>
+    </div>
+
+    <div class="app-container">
+        <div class="container px-3 py-5 text-center">
+            <form class="find-location">
+                <input type="text" class="w-100 mx-auto rounded-5 py-3 px-4 bg-sec-color mb-5 text-white border1 "
+                placeholder="Home -> Contact" id="search" />
+            </form>
+        </div>
+    </div>
+
+
+
+
+    <footer class="site-footer mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <form action="#" class="subscribe-form">
+                        <input type="text" placeholder="Enter your email to subscribe..." class="text-white">
+                        <input type="submit" value="Subscribe" class="text-white px-4">
+                    </form>
+                </div>
+                <div class="col-md-3 col-md-offset-1 ms-5">
+                    <div class="social-links  text-center">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-google-plus"></i></a>
+                        <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <p class="colophon text-white">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+        </div>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
